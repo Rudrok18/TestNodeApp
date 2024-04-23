@@ -2,9 +2,8 @@ on: push
 jobs:
     buid-node: 
         runs-on: ubuntu-latest
-        container: node:16
+        container: python
         steps:
-            - run: node --version
-            - run: npm --version
+            - run: python --version
             - uses: actions/checkout@v3
-            - run: node app.js
+            - run: python helloworld.py
