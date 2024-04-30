@@ -1,9 +1,13 @@
-on: push
+name: Examen 3 Rodrigo
+on: [push]
 jobs:
-    buid-node: 
+    buid: 
         runs-on: ubuntu-latest
-        container: python
+        container: node
         steps:
-            - run: python --version
-            - uses: actions/checkout@v3
-            - run: python helloworld.py
+        - name: Print Something
+          run: echo "Rodrigo López Coronado"
+        - name: Print Something 2
+          run: node --version
+        - name: Print Something 3
+          run: echo "739204"
